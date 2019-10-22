@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <img src="/assets/images/CodingDojo.png">
+    <div class="btn-group mr-2" role="group" aria-label="Home">
+      <button class="btn btn-secondary btn-lg" [routerLink]="['home']">Home</button>
+    </div>
+
+    <div class="btn-group mr-2" role="group" aria-label="Mine">
+      <button class="btn btn-secondary btn-lg" [routerLink]="['mine']">Mine Coins</button>
+    </div>
+
+    <div class="btn-group mr-2" role="group" aria-label="Buy">
+      <button class="btn btn-secondary btn-lg" [routerLink]="['buy']">Buy Coins</button>
+    </div>
+
+    <div class="btn-group mr-2" role="group" aria-label="Sell">
+      <button class="btn btn-secondary btn-lg" [routerLink]="['sell']">Sell Coins</button>
+    </div>
+    <div class="btn-group mr-2" role="group" aria-label="Ledger">
+      <button class="btn btn-secondary btn-lg" [routerLink]="['ledger']">Browse Ledger</button>
+    </div>
+    <div class="btn-group mr-2" role="group" aria-label="Tabs">
+    </div>
+
+    <!-- <ul class="list-group list-group-horizontal">
+              
+                <li class="list-group-item">
+                    <button class="btn btn-secondary btn-lg" [routerLink]="['home']">Home</button>
+                  </li>
+                  <li class="list-group-item">
+                    <button class="btn btn-secondary btn-lg" [routerLink]="['mine']">Mine Coins</button>
+                  </li>
+                  <li class="list-group-item">
+                    <button class="btn btn-secondary btn-lg" [routerLink]="['buy']">Buy Coins</button>
+                  </li>
+                  <li class="list-group-item">
+                    <button class="btn btn-secondary btn-lg" [routerLink]="['sell']">Sell Coins</button>
+                  </li>
+                  <li class="list-group-item">
+                    <button class="btn btn-secondary btn-lg" [routerLink]="['ledger']">Browse Ledger</button>
+                  </li>
+              </ul> -->
+    <router-outlet></router-outlet>
+    
+  </div>
+</body>
+
+</html>

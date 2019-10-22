@@ -1,0 +1,13 @@
+<h1 class="font-weight-bold">Mine ShintoCoins</h1>
+    <h3> Here you can mine ShintoCoins by being the first to solve the algorithm:</h3>
+    <h2 *ngIf="trivia">{{trivia.results[0].question}}</h2>
+  <form (submit)="triviaAnswer(answer)">
+      <div class="form-group">
+
+          <select class="form-control" name="answers" [(ngModel)]="answer">
+              <option *ngFor="let answer of answers" [ngValue]="answer">{{answer}}</option>
+            </select>
+        </div>
+            <input class="btn btn-secondary" type="submit" value="Submit">
+  </form>
+  <h3 id="outcome">{{result}}</h3>
