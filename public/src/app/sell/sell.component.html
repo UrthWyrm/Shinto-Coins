@@ -1,1 +1,12 @@
-<p>sell works!</p>
+<div class="container">
+      <h1>Sell ShintoCoins</h1>
+      <h2>Current ShintoCoin Value: ${{_httpService.coinValue}}.00</h2>
+      <h2>Number of ShintoCoins Owned: {{_httpService.yourCoins}}</h2>
+      <form (submit) = "_httpService.sellCoin(qty)">
+          <div class="form-group">
+              <input class="form-control" type="number" placeholder="Quantity" name = "sell" [(ngModel)]="qty">
+            </div>
+          <button class="btn btn-secondary" type="submit">Sell</button>
+      </form>
+    </div>
+    

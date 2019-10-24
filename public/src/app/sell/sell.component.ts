@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpService } from './../http.service';
 
 @Component({
   selector: 'app-sell',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SellComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _httpService: HttpService) { }
 
   ngOnInit() {
   }
