@@ -5,32 +5,38 @@ import { LedgerComponent } from './ledger/ledger.component';
 import { BuyComponent } from './buy/buy.component';
 import { SellComponent } from './sell/sell.component';
 import { MineComponent } from './mine/mine.component';
+import { TransactionComponent } from './transaction/transaction.component';
 
 const routes: Routes = [
   {
     path: 'home',
-    component: HomeComponent,
+    component: HomeComponent
   },
 
   {
     path: 'ledger',
-    component: LedgerComponent,
+    component: LedgerComponent
   },
 
   {
     path: 'buy',
-    component: BuyComponent,
+    component: BuyComponent
   },
 
   {
     path: 'sell',
-    component: SellComponent,
+    component: SellComponent
   },
 
   {
     path: 'mine',
-    component: MineComponent,
+    component: MineComponent
   },
+
+  {
+    path: 'transaction/id:',
+    component: TransactionComponent
+  }
   
 ];
 

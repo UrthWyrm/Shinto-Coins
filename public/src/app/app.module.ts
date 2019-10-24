@@ -12,6 +12,7 @@ import { HomeComponent } from './home/home.component';
 import { LedgerComponent } from './ledger/ledger.component';
 import { MineComponent } from './mine/mine.component';
 import { SellComponent } from './sell/sell.component';
+import { TransactionComponent } from './transaction/transaction.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SellComponent } from './sell/sell.component';
     HomeComponent,
     LedgerComponent,
     MineComponent,
-    SellComponent
+    SellComponent,
+    TransactionComponent
   ],
   imports: [
     BrowserModule,
